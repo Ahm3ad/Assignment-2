@@ -1,25 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <%- include partials/header.ejs %>
-  <%- include partials/nav.ejs %>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
-<body>
-  <div class="jumbotron">
-    <h1 class="display-4"><h1> Welcome to the <%= title %> page</h1>
-    <% if (title == "Home") %>
-      <p>Hi! I am Ahmaad Riaz. In this website you will find this home page; and in the navigation bar you can find out about me, my project and you are able to contact me</p>
-  
-      <img src="../Images/photo.jpg" alt=" Picture Of me" width="445" height="445" />
-      <img src="../Images/photo2.jpg " alt=" Picture Of me" width="445" height="445" />
-      <img src="../Images/WIN_20241003_23_24_23_Pro.mp4" alt="Picture Of me" width="445" height="445" />
-  
-  
-</body>
-</html>
+<%- include('partials/header.ejs') %>
+<%- include('partials/nav.ejs') %>
 
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to the <%= title %> Page</h1>
+  
+  <% if (title === "Home") { %>
+    <p>Hello, my name is Ahmaad Riaz, and welcome to my professional portfolio. This website showcases my background, projects, and passion for technology. Use the navigation bar to explore more about me, view my work, or get in touch.</p>
+    <img src="../Images/photo.jpg" alt="Picture of Ahmaad Riaz" width="445" height="445" />
+  <% } %>
 
+  <% if (title === "About") { %>
+    <h2>About Me</h2>
+    <p>
+      Hello again! I'm Ahmaad Riaz, currently a second-year student specializing in Networking and IT Security. I was born and raised in Toronto, Ontario, and I have always been passionate about technology. 
+      My journey into the tech field started early, as I have always enjoyed learning about the latest advancements and understanding how systems operate. 
+      I'm dedicated to expanding my knowledge in networking, cybersecurity, and emerging technologies that shape the future of our connected world.
+    </p>
+    <img src="../Images/photo.jpg" alt="Picture of Ahmaad Riaz" width="630" height="465">
+  <% } %>
 
+  <% if (title === "Projects") { %>
+    <h2>Projects</h2>
+    <p>
+      Here you can explore the projects I have worked on during my academic journey and beyond. My projects range from network configuration and cybersecurity exercises to web development and automation scripts. 
+      Feel free to take a look at my work and reach out if you have any questions or would like to collaborate.
+    </p>
+  <% } %>
+
+  <% if (title == "Contact Me") %>
+    <h2>Contact form</h2>
+      <p>Please fill out the form below 
+       with your information so we can get in touch. </p>
+      <form action=https://formspree.io/f/mwpkoqwn method="Post">
+      <input type="text" name="first" placeholder="First Name" required>  
+      <input type="text" name="last" placeholder="Last Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <textarea rows="5" cols="60" name="message" placeholder="Enter Message" required></textarea>     
+      <button type="Submit">Submit</button>
+      </form>
+  <%  %>
+</div>
+</main>
+
+<%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %>
