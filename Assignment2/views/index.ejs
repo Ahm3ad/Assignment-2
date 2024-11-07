@@ -1,8 +1,25 @@
-<%- include partials/header.ejs %>
-<%- include partials/nav.ejs %>
-<div class="jumbotron">
-  <h1 class="display-4"><h1> Welcome to the <%= title %> page</h1>
-  <% if (title == "Home ") { %>
-    <p>Hi! I am Ahmaad Riaz. In this website you owill find this home page; and in the navigation bar you can find out about me, my project and you are able to contact me</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include partials/header.ejs %>
+  <%- include partials/nav.ejs %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+  <div class="jumbotron">
+    <h1 class="display-4"><h1> Welcome to the <%= title %> page</h1>
+    <% if (title == "Home") %>
+      <p>Hi! I am Ahmaad Riaz. In this website you will find this home page; and in the navigation bar you can find out about me, my project and you are able to contact me</p>
+  
+      <img src="../Images/photo.jpg" alt=" Picture Of me" width="445" height="445" />
+      <img src="../Images/photo2.jpg " alt=" Picture Of me" width="445" height="445" />
+      <img src="../Images/WIN_20241003_23_24_23_Pro.mp4" alt="Picture Of me" width="445" height="445" />
+  
+  
+</body>
+</html>
 
-    <img src="Images/photo" alt="">
+
+
