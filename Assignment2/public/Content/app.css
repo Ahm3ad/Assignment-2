@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* CSS Document for Portfolio Styling */
+
+/* General body styles for consistent look across the page */
+body {
+    background: linear-gradient(to right, #0077b6, #00b4d8); /* Smooth gradient background for a clean and modern look */
+    background-color: #0077b6; /* Fallback solid color */
+    font-family: 'Trebuchet MS', Geneva, Arial, sans-serif; /* Clean, modern sans-serif fonts */
+    padding: 0;
+    margin: 0;
+}
+
+/* Wrapper style for containing page content in a centered container */
+#wrapper {
+    width: 960px;
+    height: auto;
+    margin: 0 auto; /* Centering the content */
+    background-color: #00b4d8; /* Light blue to complement the body gradient */
+    padding: 20px; /* Add padding for better spacing */
+    border-radius: 10px; /* Rounded corners for a modern look */
+}
+
+/* Right-column style for right section content */
+#right-column {
+    float: right;
+    width: 60%;
+    height: auto;
+    background-color: #caf0f8; /* Light complementary color for differentiation */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Left-column style for left section content */
+#left-column {
+    float: left;
+    width: 35%;
+    height: auto;
+    background-color: #90e0ef; /* Light, visually distinct color */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* General styling for common text elements */
+h1, h2, h3, h4, h5, h6, p, li {
+    margin-left: 15px;
+}
+
+/* Footer section style */
+#footer {
+    height: 80px;
+    background-color: #0077b6; /* Dark blue for consistency */
+    color: #ffffff; /* White text for contrast */
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* Banner section style with header */
+#banner {
+    height: 150px;
+    background-color: #0077b6; /* Consistent dark blue to tie sections together */
+    color: #ffffff; /* White text for visibility */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/* Style for heading inside the banner for better visibility */
+#banner h1 {
+    color: #ffffff;
+    font-size: 2em;
+}
+
+/* Clear float to ensure no layout issues with floated elements */
+.clear {
+    clear: both;
+}
