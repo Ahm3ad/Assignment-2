@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include partials/header.ejs %>
+<%- include partials/nav.ejs %>
+<div class="jumbotron">
+  <h1 class="display-4"><h1> Welcome to the <%= title %> page</h1>
+  <% if (title == "Home ") { %>
+    <p>Hi! I am Ahmaad Riaz. In this website you owill find this home page; and in the navigation bar you can find out about me, my project and you are able to contact me</p>
+
+    <img src="Images/photo" alt="">
