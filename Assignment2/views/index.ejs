@@ -1,33 +1,36 @@
 <%- include('partials/header.ejs') %>
 <%- include('partials/nav.ejs') %>
 
-<div class="jumbotron">
-  <h1 class="display-4">Welcome to the <%= title %> Page</h1>
+<div class="jumbotron"> 
+  <h1 class="display-4">Welcome to the <%= title %> Page</h1> <!--Title page  -->
   
   <% if (title === "Home") { %>
     <p>Hello, my name is Ahmaad Riaz, and welcome to my professional portfolio. This website showcases my background, projects, and passion for technology. Use the navigation bar to explore more about me, view my work, or get in touch.</p>
-    <img src="../Images/photo.jpg" alt="Picture of Ahmaad Riaz" width="445" height="445" />
+    <img src="/images/photo.jpg" alt="Picture of Ahmaad Riaz" width="445" height="445" />
   <% } %>
 
-  <% if (title === "About") { %>
+  <% if (title === "About Me") { %>  <!--About me page -->
     <h2>About Me</h2>
     <p>
       Hello again! I'm Ahmaad Riaz, currently a second-year student specializing in Networking and IT Security. I was born and raised in Toronto, Ontario, and I have always been passionate about technology. 
       My journey into the tech field started early, as I have always enjoyed learning about the latest advancements and understanding how systems operate. 
       I'm dedicated to expanding my knowledge in networking, cybersecurity, and emerging technologies that shape the future of our connected world.
     </p>
-    <img src="../Images/photo.jpg" alt="Picture of Ahmaad Riaz" width="630" height="465">
+    <video width="320" height="240" controls>
+      <source src="/images/WIN_20241003_23_24_23_Pro.mp4" type="video/mp4">
+      
+    </video>
   <% } %>
 
-  <% if (title === "Projects") { %>
+  <% if (title === "Projects") { %> <!-- Projects  -->
     <h2>Projects</h2>
+    <img src="/images/DRONE.jpeg" alt="Picture of Ahmaad Riaz" width="445" height="445" />
     <p>
-      Here you can explore the projects I have worked on during my academic journey and beyond. My projects range from network configuration and cybersecurity exercises to web development and automation scripts. 
-      Feel free to take a look at my work and reach out if you have any questions or would like to collaborate.
+      I collaborated with a professor at Ontario Tech University and the Durham Police Force on a drone project aimed at enhancing first responder capabilities. The project focused on utilizing drones to assist first responders by providing rapid aerial assessments during emergency situations. This included testing drone technology for real-time video streaming, evaluating its effectiveness in various scenarios, and understanding its role in improving situational awareness for emergency personnel..
     </p>
   <% } %>
 
-  <% if (title == "Contact Me") %>
+  <% if (title === "Contact Me") { %>  <!-- Contact Me -->
     <h2>Contact form</h2>
       <p>Please fill out the form below 
        with your information so we can get in touch. </p>
@@ -38,7 +41,7 @@
       <textarea rows="5" cols="60" name="message" placeholder="Enter Message" required></textarea>     
       <button type="Submit">Submit</button>
       </form>
-  <%  %>
+  <% } %>
 </div>
 </main>
 
